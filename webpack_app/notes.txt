@@ -1,0 +1,6 @@
+node node_modules/webpack/bin/webpack.js index.js --output bundle.js
+
+webpack index.js --output bundle.js
+
+npm run [nombre del script de package.json]
+
