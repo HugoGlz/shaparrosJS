@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Class 1</title>
+
+	<script >
+		
+		const hugo = { nombre: 'hugo'};
+		
+		function saluda (saludo = 'hola', despedida = 'adios'){
+			alert (`${saludo} ${this.nombre} ${despedida}`);
+		}
+		
+		saluda();
+		
+		const saludaThis = saluda.bind(hugo);
+		
+		saludaThis();
+		
+		saluda.call(hugo, 'hello', 'bye'); //con parametros
+		
+		saluda.apply(hugo, ['hello its me,', 'good bye']);
+		
+	</script>
+</head>
+<body>
+  
+</body>
+</html>
